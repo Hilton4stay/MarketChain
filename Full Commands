@@ -1,0 +1,22 @@
+# Initialize the project directory
+mkdir MarketChain
+cd MarketChain
+
+# Initialize git and create essential files
+git init
+echo "# MarketChain" >> README.md
+echo "node_modules/" >> .gitignore
+
+# Set up the project structure
+mkdir backend frontend
+cd backend
+touch index.js
+mkdir models routes
+cd ../frontend
+npx create-react-app .
+
+# Add, commit, and push to GitHub
+git add .
+git commit -m "Initial commit with project structure"
+git remote add origin https://github.com/your-username/MarketChain.git
+git push -u origin master
